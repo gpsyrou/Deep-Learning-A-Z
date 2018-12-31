@@ -1,6 +1,6 @@
 # Deep-Learning-A-Z
 
-## Notes from the course Deep Learning A-Z provided from Udemy.
+## Notes from the course Deep Learning A-Z provided by Udemy.
 
 
 **Description of the Examples**:
