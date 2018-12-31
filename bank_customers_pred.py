@@ -1,11 +1,5 @@
 
-
-
-import os 
-os.chdir('C:\\Users\\hz336yw\\Desktop\\Personal\\Udemy\\Deep_Learning_A_Z\\Deep_Learning_A_Z\\Artificial_Neural_Networks\\Artificial_Neural_Networks')
-
-#  Section 4 - Building an Artificial Neural Network
-
+# Building an Artificial Neural Network
 
 # Part 1 - Importing Data
 
@@ -90,7 +84,6 @@ classifier.add(Dense(output_dim = 1 ,
 # loss = categorical_crossentropy if Output variable has many levels
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy' , 
                    metrics =['accuracy'])
-
 
 # Epochs: Number of times we are training out NN at the entire training set 
 # batch_size : Number of samples after of which we want to update the weights
