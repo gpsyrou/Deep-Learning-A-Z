@@ -1,3 +1,4 @@
+
 #  Section 6 - Evaluating,Improving and Tuning an ANN
 
 
@@ -72,3 +73,9 @@ def build_classifier():
 
 classifier = KerasClassifier(build_fn = build_classifier,batch_size = 10, epochs = 100)
 accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, cv = 10)
+
+# The previous will return 10 different accuracies
+
+mean = accuracies.mean()
+variance = accuracies.std()
+
