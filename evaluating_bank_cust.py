@@ -1,4 +1,3 @@
-
 #  Section 6 - Evaluating,Improving and Tuning an ANN
 
 
@@ -105,3 +104,42 @@ classifier.add(Dropout(rate = 0.1))
 classifier.add(Dense(output_dim = 1 , init = 'uniform', activation = 'sigmoid'))
 
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy' , metrics =['accuracy'])
+
+
+
+# Parameter tuning with GridSearch
+# GridSearch test multiple combination of hyperparameters and it helps us identify the best combo for our dataset
+
+# Tuning the ANN
+
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.layers import Dropout
+from sklearn.model_selection import GridSearchCV
+from keras.wrappers.scikit_learn import KerasClassifier
+
+
+def build_classifier(optimizer):
+    classifier = Sequential()
+    classifier.add(Dense(output_dim = 6, input_dim = 11, init = 'uniform', activation = 'relu'))
+    classifier.add(Dense(output_dim = 6, init = 'uniform' , activation = 'relu'))
+    classifier.add(Dense(output_dim = 1 , init = 'uniform', activation = 'sigmoid'))
+    classifier.compile(optimizer = optimizer , loss = 'binary_crossentropy' , metrics =['accuracy'])
+
+    return classifier
+
+classifier = KerasClassifier(build_fn = build_classifier)
+
+
+parameters = {'batch_size':[25,32],
+              'epochs': [100,200],
+              'optimizer':['adam','rmsprop']}
+
+grid_search = GridSearchCV(estimator = classifier,
+                           param_grid = parameters,
+                           scoring = 'accuracy',
+                           cv = 10)
+
+grid_search = grid_search.fit(X_train,y_train)
+best_parameters = grid_search.best_params_
+best_accuracy = grid_search.best_score_
