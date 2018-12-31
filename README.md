@@ -13,9 +13,9 @@
         
     **Readings**
     <ul>
-    1) Yann LeCun et al., 1998, <em><a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">Efficient BackProp</a></em> </b>
-    2) By Xavier Glorot et al., 2011,&nbsp;<a href="http://jmlr.org/proceedings/papers/v15/glorot11a/glorot11a.pdf"><em>Deep sparse rectifier neural networks</em></a>
-    3) CrossValidated, 2015,&nbsp;<a href="http://stats.stackexchange.com/questions/154879/a-list-of-cost-functions-used-in-neural-networks-alongside-applications"><em>A list of cost functions used in neural networks, alongside applications</em></a>
-    4) Andrew Trask, 2015,&nbsp;<a href="https://iamtrask.github.io/2015/07/27/python-network-part2/"><i>A Neural Network in 13 lines of Python (Part 2 – Gradient Descent)</i></a>
-    5) Michael Nielsen, 2015,&nbsp;<a href="http://neuralnetworksanddeeplearning.com/chap2.html"><i>Neural Networks and Deep Learning</i></a>
+    1) Yann LeCun et al., 1998, <em><a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">Efficient BackProp</a></em> <br />
+    2) By Xavier Glorot et al., 2011,&nbsp;<a href="http://jmlr.org/proceedings/papers/v15/glorot11a/glorot11a.pdf"><em>Deep sparse rectifier neural networks</em></a><br />
+    3) CrossValidated, 2015,&nbsp;<a href="http://stats.stackexchange.com/questions/154879/a-list-of-cost-functions-used-in-neural-networks-alongside-applications"><em>A list of cost functions used in neural networks, alongside applications</em></a><br />
+    4) Andrew Trask, 2015,&nbsp;<a href="https://iamtrask.github.io/2015/07/27/python-network-part2/"><i>A Neural Network in 13 lines of Python (Part 2 – Gradient Descent)</i></a><br />
+    5) Michael Nielsen, 2015,&nbsp;<a href="http://neuralnetworksanddeeplearning.com/chap2.html"><i>Neural Networks and Deep Learning</i></a><br />
     </ul>
