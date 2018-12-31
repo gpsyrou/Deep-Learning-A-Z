@@ -1,3 +1,6 @@
+#  Section 4 - Building an Artificial Neural Network
+
+
 # Part 1 - Importing Data
 
 # Importing the libraries
@@ -73,5 +76,10 @@ classifier.add(Dense(output_dim = 6, input_dim = 11,
 classifier.add(Dense(output_dim = 6, init = 'uniform' , activation = 'relu'))
 
 # Creating the Output Layer
-classifier.add(Dense(output_dim = 1 , init = 'uniform', activation = 'sigmoid'))
+classifier.add(Dense(output_dim = 1 , 
+                     init = 'uniform', activation = 'sigmoid'))
 
+# Compiling the ANN
+# loss = binary_crossentropy if Output variable is binary
+# loss = categorical_crossentropy if Output variable has many levels
+classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy' , metrics =['accuracy'])
