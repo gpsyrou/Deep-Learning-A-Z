@@ -12,8 +12,6 @@ import pandas as pd
 # Visualization
 import matplotlib.pyplot as plt
 
-
-
 # Goal: Predict which costumers are going to leave the bank (binary classification)
 
 # Importing the dataset
@@ -39,3 +37,8 @@ X[:,2] = label_encoder_2.fit_transform(X[:,2]) # Encoding Sex
 onehotencoder = OneHotEncoder(categorical_features = [1])
 X = onehotencoder.fit_transform(X).toarray()
 X = X[:,1:]
+
+
+# Splitting the dataset into the Training set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
