@@ -82,4 +82,13 @@ classifier.add(Dense(output_dim = 1 ,
 # Compiling the ANN
 # loss = binary_crossentropy if Output variable is binary
 # loss = categorical_crossentropy if Output variable has many levels
-classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy' , metrics =['accuracy'])
+classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy' , 
+                   metrics =['accuracy'])
+
+
+# Epochs: Number of times we are training out NN at the entire training set 
+# batch_size : Number of samples after of which we want to update the weights
+
+# Fit the data and train the ANN
+classifier.fit(X_train, y_train, batch_size = 10 , epochs = 100)
+
