@@ -1,4 +1,3 @@
-
 #  Section 6 - Evaluating,Improving and Tuning an ANN
 
 
@@ -79,3 +78,10 @@ accuracies = cross_val_score(estimator = classifier, X = X_train, y = y_train, c
 mean = accuracies.mean()
 variance = accuracies.std()
 
+# Imporving the ANN
+# Dropout Regularization to reduce overfitting if needed
+
+# Dropout: At each iteration of the training some neurons are randomly 
+# disables , to prevent them be highly dependent when they learn the correlations
+# and therefore by overwriting these neurons the ANN learns several independent correlations in the data
+# This prevents the neurons from learn too much and thus overfitting
