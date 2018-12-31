@@ -143,3 +143,11 @@ grid_search = GridSearchCV(estimator = classifier,
 grid_search = grid_search.fit(X_train,y_train)
 best_parameters = grid_search.best_params_
 best_accuracy = grid_search.best_score_
+
+print(best_parameters)
+print(best_accuracy)
+
+'''
+{'batch_size': 32, 'epochs': 100, 'optimizer': 'rmsprop'}
+0.84525
+'''
