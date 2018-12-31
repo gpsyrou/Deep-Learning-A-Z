@@ -1,3 +1,4 @@
+
 #  Section 6 - Evaluating,Improving and Tuning an ANN
 
 
@@ -58,6 +59,7 @@ X_test = sc.transform(X_test)
 
 from keras.models import Sequential
 from keras.layers import Dense
+from keras.layers import Dropout
 from keras.wrappers.scikit_learn import KerasClassifier
 from sklearn.model_selection import cross_val_score
 
@@ -79,9 +81,27 @@ mean = accuracies.mean()
 variance = accuracies.std()
 
 # Imporving the ANN
+
 # Dropout Regularization to reduce overfitting if needed
 
 # Dropout: At each iteration of the training some neurons are randomly 
 # disables , to prevent them be highly dependent when they learn the correlations
 # and therefore by overwriting these neurons the ANN learns several independent correlations in the data
 # This prevents the neurons from learn too much and thus overfitting
+
+# We can apply dropout in one or several layers
+# When we have overfitting its better to apply dropout in all layers
+
+# Creating an ANN with dropouts
+
+classifier = Sequential()
+
+classifier.add(Dense(output_dim = 6, input_dim = 11, init = 'uniform', activation = 'relu'))
+classifier.add(Dropout(rate = 0.1))
+
+classifier.add(Dense(output_dim = 6, init = 'uniform' , activation = 'relu'))
+classifier.add(Dropout(rate = 0.1))
+
+classifier.add(Dense(output_dim = 1 , init = 'uniform', activation = 'sigmoid'))
+
+classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy' , metrics =['accuracy'])
