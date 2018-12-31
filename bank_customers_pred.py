@@ -1,4 +1,11 @@
-# Building an Artificial Neural Network
+
+
+
+import os 
+os.chdir('C:\\Users\\hz336yw\\Desktop\\Personal\\Udemy\\Deep_Learning_A_Z\\Deep_Learning_A_Z\\Artificial_Neural_Networks\\Artificial_Neural_Networks')
+
+#  Section 4 - Building an Artificial Neural Network
+
 
 # Part 1 - Importing Data
 
@@ -84,11 +91,13 @@ classifier.add(Dense(output_dim = 1 ,
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy' , 
                    metrics =['accuracy'])
 
+
 # Epochs: Number of times we are training out NN at the entire training set 
 # batch_size : Number of samples after of which we want to update the weights
 
 # Fit the data and train the ANN
 classifier.fit(X_train, y_train, batch_size = 10 , epochs = 100)
+
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
@@ -101,6 +110,11 @@ y_pred = (y_pred > 0.5)
 # Making the Confusion Matrix
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
+print(cm)
 
+'''
+[[1503   92]
+ [ 183  222]]
+'''
 # Accuracy
 print('The accuracy is: ' + str(np.round(((1503 + 222) / len(y_test)) * 100,2)) + '%') 
