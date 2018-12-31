@@ -1,3 +1,4 @@
+
 #  Section 6 - Evaluating,Improving and Tuning an ANN
 
 
@@ -151,3 +152,15 @@ print(best_accuracy)
 {'batch_size': 32, 'epochs': 100, 'optimizer': 'rmsprop'}
 0.84525
 '''
+# Fit the data and train the ANN with the optimal parameters
+classifier = build_classifier('rmsprop')
+classifier.fit(X_train, y_train, batch_size = 32 , epochs = 100)
+y_pred = classifier.predict(X_test)
+y_pred = (y_pred > 0.5)
+
+
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
+print(cm)
+
+print('The accuracy is: ' + str(np.round(((1503 + 222) / len(y_test)) * 100,2)) + '%') 
