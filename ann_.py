@@ -1,6 +1,3 @@
-#  Section 4 - Building an Artificial Neural Network
-
-
 # Part 1 - Importing Data
 
 # Importing the libraries
@@ -63,3 +60,18 @@ from keras.layers import Dense
 
 # Initialising the ANN
 classifier = Sequential()
+
+# Adding the input Layer and the first hiddern Layer
+# One technique that we can use in order to pick a number of nodes for the hidden
+# Layer is to take the average of the number of nodes from the input layer and the output layer
+# Thus here 11(numbe rof X's) + 1(output)
+# Also we are going to use rectifier for the hidden layer and sigmoid for the output layer
+classifier.add(Dense(output_dim = 6, input_dim = 11, 
+                     init = 'uniform', activation = 'relu'))
+
+# Adding the second hidden Layer
+classifier.add(Dense(output_dim = 6, init = 'uniform' , activation = 'relu'))
+
+# Creating the Output Layer
+classifier.add(Dense(output_dim = 1 , init = 'uniform', activation = 'sigmoid'))
+
