@@ -1,7 +1,7 @@
 #  Section 4 - Building an Artificial Neural Network
 
 
-# Part 1 - Data Preprocessing
+# Part 1 - Importing Data
 
 # Importing the libraries
 
@@ -22,6 +22,8 @@ dataset = pd.read_csv('Churn_Modelling.csv')
 X = dataset.iloc[:, 3:13].values # contains thwe useful features
 y = dataset.iloc[:, 13].values # contains the binary outcomes
 
+# Step 2 - Preprocessing
+
 # We have some categorical variables, so at first point we need to 
 # encode the categorical data
 
@@ -38,6 +40,7 @@ onehotencoder = OneHotEncoder(categorical_features = [1])
 X = onehotencoder.fit_transform(X).toarray()
 X = X[:,1:]
 
+# Step 3 - Split dataset and Scale
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
@@ -49,3 +52,14 @@ from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
+
+
+# Part 4 - Constructing the NN
+import keras
+# This will initialize our NN
+from keras.models import Sequential
+# This will craete the Layers of the NN
+from keras.layers import Dense
+
+# Initialising the ANN
+classifier = Sequential()
