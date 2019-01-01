@@ -15,7 +15,7 @@
         
     **Task 2 - Evaluate,Improve and Tune the ANN**
     
-  Tuning and improving the ANN constructed in Task 1.
+      Tuning and improving the ANN constructed in Task 1.
   
     **Readings**
     <ul>
