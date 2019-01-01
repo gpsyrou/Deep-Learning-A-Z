@@ -117,7 +117,6 @@ from keras.layers import Dropout
 from sklearn.model_selection import GridSearchCV
 from keras.wrappers.scikit_learn import KerasClassifier
 
-
 def build_classifier(optimizer):
     classifier = Sequential()
     classifier.add(Dense(output_dim = 6, input_dim = 11, init = 'uniform', activation = 'relu'))
