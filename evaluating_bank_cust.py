@@ -102,8 +102,6 @@ classifier.add(Dense(output_dim = 1 , init = 'uniform', activation = 'sigmoid'))
 
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy' , metrics =['accuracy'])
 
-
-
 # Parameter tuning with GridSearch
 # GridSearch test multiple combination of hyperparameters and it helps us identify the best combo for our dataset
 
