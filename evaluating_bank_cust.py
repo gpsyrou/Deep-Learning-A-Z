@@ -3,8 +3,6 @@
 
 # Part 1 - Importing Data
 
-# Importing the libraries
-
 # Data processing
 import numpy as np
 import pandas as pd
