@@ -15,7 +15,6 @@
         
     **Task 2 - Evaluate,Improve and Tune the ANN**
   
-        
     **Readings**
     <ul>
     1) Yann LeCun et al., 1998, <em><a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">Efficient BackProp</a></em> <br />
