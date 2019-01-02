@@ -2,7 +2,6 @@
 
 ## Notes from the course Deep Learning A-Z provided by Udemy.
 
-
 **Description of the Examples**:
 
 1) **Bank Customers**
