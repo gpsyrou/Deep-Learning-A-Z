@@ -26,4 +26,4 @@
     5) Michael Nielsen, 2015,&nbsp;<a href="http://neuralnetworksanddeeplearning.com/chap2.html"><i>Neural Networks and Deep Learning</i></a><br />
     </ul>
   
-  **Task 3 - Convolutional Neural Networks
+  **Task 3 - Convolutional Neural Networks**
