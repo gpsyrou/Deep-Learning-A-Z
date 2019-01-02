@@ -25,3 +25,5 @@
     4) Andrew Trask, 2015,&nbsp;<a href="https://iamtrask.github.io/2015/07/27/python-network-part2/"><i>A Neural Network in 13 lines of Python (Part 2 – Gradient Descent)</i></a><br />
     5) Michael Nielsen, 2015,&nbsp;<a href="http://neuralnetworksanddeeplearning.com/chap2.html"><i>Neural Networks and Deep Learning</i></a><br />
     </ul>
+  
+  **Task 3 - Convolutional Neural Networks
