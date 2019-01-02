@@ -1,5 +1,7 @@
 # Deep-Learning-A-Z
 
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="22" style="width:104px;height:142px;">
+
 ## Notes from the course Deep Learning A-Z provided by Udemy.
 
 **Description of the Examples**:
