@@ -30,3 +30,4 @@
 2) **edit_name_of_the_example**
 
    **Task 3 - Convolutional Neural Networks**
+
