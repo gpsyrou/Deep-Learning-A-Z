@@ -91,7 +91,6 @@ classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy' ,
 # Fit the data and train the ANN
 classifier.fit(X_train, y_train, batch_size = 10 , epochs = 100)
 
-
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
 # This returned probabilities of a costumer to leave the bank
