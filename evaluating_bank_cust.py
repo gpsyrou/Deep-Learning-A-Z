@@ -124,7 +124,6 @@ def build_classifier(optimizer):
 
 classifier = KerasClassifier(build_fn = build_classifier)
 
-
 parameters = {'batch_size':[25,32],
               'epochs': [100,200],
               'optimizer':['adam','rmsprop']}
