@@ -19,7 +19,7 @@ dataset = pd.read_csv('Churn_Modelling.csv')
 # First check which variables seem useful to predict which costumers are going to leave the bank
 # The first few columns dont provide any useful
 
-X = dataset.iloc[:, 3:13].values # contains thwe useful features
+X = dataset.iloc[:, 3:13].values # contains the useful features
 y = dataset.iloc[:, 13].values # contains the binary outcomes
 
 # Step 2 - Preprocessing
