@@ -155,3 +155,5 @@ cm = confusion_matrix(y_test, y_pred)
 print(cm)
 
 print('The accuracy is: ' + str(np.round(((1503 + 222) / len(y_test)) * 100,2)) + '%') 
+
+
