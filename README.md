@@ -32,7 +32,7 @@
    **Task 3 - Convolutional Neural Networks**
    
    Given a set of dog and cat pictures , train a CNN to predict in which of these two categories a new picture belongs to.
-   The code can be found here:
+   The code can be found <a href="https://github.com/gpsyrou/Deep-Learning-A-Z/blob/master/Convolutional%20Neural%20Networks/classify_catsndogs.py"> here </a>.
    
    **Readings**
    <ul>
