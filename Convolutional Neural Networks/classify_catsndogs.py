@@ -78,5 +78,6 @@ classifier.fit_generator(
         steps_per_epoch = 8000, # number of instances in training set
         epochs=25,
         validation_data = test_set,
-        validation_steps = 2000) # number of instances in test set
+        validation_steps = 2000, # number of instances in test set
+        workers = 3) 
 
