@@ -32,4 +32,15 @@
    **Task 3 - Convolutional Neural Networks**
    
    Given a set of dog and cat pictures , train a CNN to predict in which of these two categories a new picture belongs to.
-
+   
+   **Readings**
+   <ul>
+      <li>Yann LeCun et al., 1998,&nbsp;<a href="http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf"><em>Gradient-Based Learning Applied to Document Recognition</em></a></li>
+      <li>Jianxin Wu, 2017,&nbsp;<i><a href="http://cs.nju.edu.cn/wujx/paper/CNN.pdf">Introduction to Convolutional Neural Networks</a></i></li>
+      <li>C.-C. Jay Kuo, 2016,&nbsp;<i><a href="https://arxiv.org/pdf/1609.04112.pdf">Understanding Convolutional Neural Networks with A Mathematical Model</a></i></li>
+      <li>Kaiming He et al., 2015,&nbsp;<i><a href="https://arxiv.org/pdf/1502.01852.pdf">Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification</a></i></li>
+      <li>Dominik Scherer et al., 2010,&nbsp;<i><a href="http://ais.uni-bonn.de/papers/icann2010_maxpool.pdf">Evaluation of Pooling Operations in Convolutional Architectures for Object Recognition</a></i></li>
+      <li>Adit Deshpande, 2016,&nbsp;<i><a href="https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html">The 9 Deep Learning Papers You Need To Know About (Understanding CNNs Part 3)</a></i></li>
+      <li>Rob DiPietro, 2016,&nbsp;<i><a href="https://rdipietro.github.io/friendly-intro-to-cross-entropy-loss/">A Friendly Introduction to Cross-Entropy Loss</a></i></li>
+      <li>Peter Roelants, 2016,&nbsp;<a href="http://peterroelants.github.io/posts/neural_network_implementation_intermezzo02/"><i>How to implement a neural network Intermezzo 2</i></a></li>
+   </ul>
