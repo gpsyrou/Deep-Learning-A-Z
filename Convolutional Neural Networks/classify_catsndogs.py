@@ -36,6 +36,10 @@ classifier.add(MaxPool2D(pool_size = (2,2)))
 # We are flatteting all the Pooling Layers into one huge vector that will be the input to the ANN
 classifier.add(Flatten())
 
+# Step 4 - Full Connection
+classifier.add(Dense(output_dim = 128 , activation = 'relu' ))
+# sigmoid as we have binary outcome/ if we had more than 2 then we use softmax activation function
+classifier.add(Dense(output_dim = 1 , activation = 'sigmoid' )) 
 
 
 
