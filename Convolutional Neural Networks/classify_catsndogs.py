@@ -32,6 +32,13 @@ classifier.add(Convolution2D(32,3,3, input_shape = (64,64,3), activation = 'relu
 # It is used to reduce the number of nodes in the future fully connected layer
 classifier.add(MaxPool2D(pool_size = (2,2)))
 
+
+# Adding a second convolutional layer
+classifier.add(Convolution2D(32,3,3, activation = 'relu'))
+# And a second pooling layer
+classifier.add(MaxPool2D(pool_size = (2,2)))
+
+
 # Step 3 - Flattening
 # We are flatteting all the Pooling Layers into one huge vector that will be the input to the ANN
 classifier.add(Flatten())
@@ -52,8 +59,8 @@ classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = [
 
 from keras.preprocessing.image import ImageDataGenerator
 
-train_path = 'C:\\Users\\hz336yw\\Desktop\\Personal\\Udemy\\Deep_Learning_A_Z\\Deep_Learning_A_Z\\Convolutional_Neural_Networks\\Convolutional_Neural_Networks\\dataset\\training_set'
-test_path = 'C:\\Users\\hz336yw\\Desktop\\Personal\\Udemy\\Deep_Learning_A_Z\\Deep_Learning_A_Z\\Convolutional_Neural_Networks\\Convolutional_Neural_Networks\\dataset\\test_set'
+train_path = 'C:\\Users\\george\\Desktop\\Online Courses\\Udemy\\Convolutional_Neural_Networks\\dataset\\training_set'
+test_path = 'C:\\Users\\george\\Desktop\\Online Courses\\Udemy\\Convolutional_Neural_Networks\\dataset\\test_set'
 
 train_datagen = ImageDataGenerator(
         rescale=1./255,
@@ -76,8 +83,8 @@ test_set = test_datagen.flow_from_directory(test_path,
 classifier.fit_generator(
         training_set,
         steps_per_epoch = 8000, # number of instances in training set
-        epochs=25,
+        epochs=10,
         validation_data = test_set,
         validation_steps = 2000, # number of instances in test set
-        workers = 3) 
-
+        workers = 3
+        ) 
