@@ -12,7 +12,6 @@ from keras.layers import MaxPool2D # For the pooling layer
 from keras.layers import Flatten # For the flattening step
 from keras.layers import Dense # Used to add the fully connected layer
 
-
 # Initialize the CNN
 classifier = Sequential()
 
