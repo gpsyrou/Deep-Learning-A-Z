@@ -4,7 +4,7 @@
 
 ## Notes from the course Deep Learning A-Z provided by Udemy.
 
-**Description of the Examples**:
+**SECTION 1 - Artificial Neural Networks(ANN)**:
 
 1) **Bank Customers**
 
