@@ -27,9 +27,7 @@
     5) Michael Nielsen, 2015,&nbsp;<a href="http://neuralnetworksanddeeplearning.com/chap2.html"><i>Neural Networks and Deep Learning</i></a><br />
     </ul>
 
-2) **edit_name_of_the_example**
-
-   **Task 3 - Convolutional Neural Networks**
+**SECTION 2 - Convolutional Neural Networks(CNN)**
    
    Given a set of dog and cat pictures , train a CNN to predict in which of these two categories a new picture belongs to.
    The code can be found <a href="https://github.com/gpsyrou/Deep-Learning-A-Z/blob/master/Convolutional%20Neural%20Networks/classify_catsndogs.py"> here </a>.
