@@ -83,7 +83,7 @@ test_set = test_datagen.flow_from_directory(test_path,
 classifier.fit_generator(
         training_set,
         steps_per_epoch = 8000, # number of instances in training set
-        epochs=10,
+        epochs=25,
         validation_data = test_set,
         validation_steps = 2000, # number of instances in test set
         workers = 3
