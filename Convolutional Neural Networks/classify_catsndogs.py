@@ -35,3 +35,4 @@ classifier.add(MaxPool2D(pool_size = (2,2)))
 
 # Step 3 - Flattening
 # We are flatteting all the Pooling Layers into one huge vector that will be the input to the ANN
+classifier.add(Flatten())
