@@ -15,7 +15,7 @@
     The code can be found <a href="https://github.com/gpsyrou/Deep-Learning-A-Z/blob/master/Artificial%20Neural%20Networks/bank_customers_pred.py"> here </a>.
         
     **Task 2 - Evaluate,Improve and Tune the ANN**
-      <strong><font size="+2">This is bigger text.</font></strong>
+      <strong><font size="+4">This is bigger text.</font></strong>
       Tuning and improving the ANN constructed in Task 1.
   
     **Readings**
