@@ -48,3 +48,10 @@
    </ul>
 
 **SECTION 3 - Recurrent Neural Networks(RNN)**
+
+A recurrent neural network is a class of artificial neural network where connections between nodes form a directed graph along a sequence. (source: <a href="https://en.wikipedia.org/wiki/Recurrent_neural_network"> wikipedia </a> )
+
+
+
+
+
