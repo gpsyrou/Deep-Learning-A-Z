@@ -30,7 +30,9 @@ Artificial neural networks (ANN) or connectionist systems are computing systems 
     4) Andrew Trask, 2015,&nbsp;<a href="https://iamtrask.github.io/2015/07/27/python-network-part2/"><i>A Neural Network in 13 lines of Python (Part 2 – Gradient Descent)</i></a><br />
     5) Michael Nielsen, 2015,&nbsp;<a href="http://neuralnetworksanddeeplearning.com/chap2.html"><i>Neural Networks and Deep Learning</i></a><br />
     </ul>
-
+    
+    
+    
 **SECTION 2 - Convolutional Neural Networks(CNN)**
    
  <img src="https://cdn-images-1.medium.com/max/1600/1*NQQiyYqJJj4PSYAeWvxutg.png" alt="22" style="width:104px;height:142px;">
@@ -59,6 +61,8 @@ They have applications in image and video recognition, recommender systems,image
       <li>Rob DiPietro, 2016,&nbsp;<i><a href="https://rdipietro.github.io/friendly-intro-to-cross-entropy-loss/">A Friendly Introduction to Cross-Entropy Loss</a></i></li>
       <li>Peter Roelants, 2016,&nbsp;<a href="http://peterroelants.github.io/posts/neural_network_implementation_intermezzo02/"><i>How to implement a neural network Intermezzo 2</i></a></li>
    </ul>
+
+
 
 **SECTION 3 - Recurrent Neural Networks(RNN)**
 
