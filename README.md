@@ -19,8 +19,16 @@ Artificial neural networks (ANN) or connectionist systems are computing systems 
     The code can be found <a href="https://github.com/gpsyrou/Deep-Learning-A-Z/blob/master/Artificial%20Neural%20Networks/bank_customers_pred.py"> here </a>.
         
     **Task 2 - Evaluate,Improve and Tune the ANN**
+    
+CNNs use a variation of multilayer perceptrons designed to require minimal preprocessing.They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on their shared-weights architecture and translation invariance characteristics.
 
-      Tuning and improving the ANN constructed in Task 1.
+Convolutional networks were inspired by biological processes in that the connectivity pattern between neurons resembles the organization of the animal visual cortex. Individual cortical neurons respond to stimuli only in a restricted region of the visual field known as the receptive field. The receptive fields of different neurons partially overlap such that they cover the entire visual field.
+
+CNNs use relatively little pre-processing compared to other image classification algorithms. This means that the network learns the filters that in traditional algorithms were hand-engineered. This independence from prior knowledge and human effort in feature design is a major advantage.
+
+They have applications in image and video recognition, recommender systems,image classification, medical image analysis, and natural language processing.(source: <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network"> wikipedia </a>) 
+      
+   Tuning and improving the ANN constructed in Task 1.
   
     **Readings**
     <ul>
