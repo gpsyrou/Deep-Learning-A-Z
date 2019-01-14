@@ -1,5 +1,5 @@
 # Deep-Learning-A-Z
-<br></br>
+
 <img src="http://uc-r.github.io/public/images/analytics/deep_learning/deep_nn.png" alt="22" style="width:104px;height:142px;">
 
 ## Notes from the course Deep Learning A-Z provided by Udemy.
