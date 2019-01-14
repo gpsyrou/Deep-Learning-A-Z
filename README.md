@@ -46,3 +46,5 @@
       <li>Rob DiPietro, 2016,&nbsp;<i><a href="https://rdipietro.github.io/friendly-intro-to-cross-entropy-loss/">A Friendly Introduction to Cross-Entropy Loss</a></i></li>
       <li>Peter Roelants, 2016,&nbsp;<a href="http://peterroelants.github.io/posts/neural_network_implementation_intermezzo02/"><i>How to implement a neural network Intermezzo 2</i></a></li>
    </ul>
+
+**SECTION 3 - Recurrent Neural Networks(RNN)**
