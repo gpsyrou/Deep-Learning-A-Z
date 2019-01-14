@@ -8,6 +8,8 @@
 
 Artificial neural networks (ANN) or connectionist systems are computing systems vaguely inspired by the biological neural networks that constitute animal brains.[1] The neural network itself is not an algorithm, but rather a framework for many different machine learning algorithms to work together and process complex data inputs.Such systems "learn" to perform tasks by considering examples, generally without being programmed with any task-specific rules.An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal from one artificial neuron to another. An artificial neuron that receives a signal can process it and then signal additional artificial neurons connected to it. (source: <a href="https://en.wikipedia.org/wiki/Artificial_neural_network"> wikipedia </a>) 
 
+**Example:**
+
 1) **Bank Customers**
 
     **Task 1 - Create the Artificial Neural Network**
