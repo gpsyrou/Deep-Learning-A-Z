@@ -32,7 +32,7 @@ Artificial neural networks (ANN) or connectionist systems are computing systems 
     </ul>
     
     
-    
+<br></br>
 **SECTION 2 - Convolutional Neural Networks(CNN)**
    
  <img src="https://cdn-images-1.medium.com/max/1600/1*NQQiyYqJJj4PSYAeWvxutg.png" alt="22" style="width:104px;height:142px;">
