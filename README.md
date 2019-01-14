@@ -29,6 +29,9 @@
 
 **SECTION 2 - Convolutional Neural Networks(CNN)**
    
+ <img src=" https://cdn-images-1.medium.com/max/1600/1*NQQiyYqJJj4PSYAeWvxutg.png" alt="22" style="width:104px;height:142px;">
+  
+ 
    Given a set of dog and cat pictures , train a CNN to predict in which of these two categories a new picture belongs to.
    The code can be found <a href="https://github.com/gpsyrou/Deep-Learning-A-Z/blob/master/Convolutional%20Neural%20Networks/classify_catsndogs.py"> here </a>.
    
