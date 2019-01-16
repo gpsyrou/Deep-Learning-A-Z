@@ -90,6 +90,7 @@ classifier.fit_generator(
         ) 
 
 
+
 # Making new predictions
 
 import numpy as np
