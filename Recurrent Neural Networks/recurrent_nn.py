@@ -15,3 +15,5 @@ training_set = dataset_train.iloc[:,1:2].values # Picking only the opening price
 # Feature Scaling
 from sklearn.preprocessing import MinMaxScaler
 sc = MinMaxScaler(feature_range=(0,1)) # This will bring all stock prices between this range
+
+training_set_scaled = sc.fit_transform(training_set)
