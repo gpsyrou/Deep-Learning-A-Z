@@ -1,4 +1,3 @@
-
 # Task: Predict the trend of Googles stock price for the year 2017
 # As a training set we are using the stock prices from 2012 to 2016
 
@@ -23,4 +22,6 @@ sc = MinMaxScaler(feature_range=(0,1)) # This will bring all stock prices betwee
 
 training_set_scaled = sc.fit_transform(training_set)
 
-
+# Creating a data structure with 60 timesteps and 1 output
+# timesteps: Correspond to the previous 60 financial days (3 previous months)
+# 1 output: The stock price
