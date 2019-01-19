@@ -19,9 +19,11 @@ training_set = dataset_train.iloc[:,1:2].values # Picking only the opening price
 from sklearn.preprocessing import MinMaxScaler
 sc = MinMaxScaler(feature_range=(0,1)) # This will bring all stock prices between this range
 
-
 training_set_scaled = sc.fit_transform(training_set)
 
 # Creating a data structure with 60 timesteps and 1 output
 # timesteps: Correspond to the previous 60 financial days (3 previous months)
 # 1 output: The stock price
+
+# These list will hold each time the 60 previous stock prices (x) and the output stock price(y)
+X_train,y_train = [],[]
