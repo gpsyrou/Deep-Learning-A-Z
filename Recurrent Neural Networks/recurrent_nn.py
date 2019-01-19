@@ -1,3 +1,7 @@
+
+# Task: Predict the trend of Googles stock price for the year 2017
+# As a training set we are using the stock prices from 2012 to 2016
+
 # Import libraries
 import os
 import numpy as np
@@ -16,4 +20,7 @@ training_set = dataset_train.iloc[:,1:2].values # Picking only the opening price
 from sklearn.preprocessing import MinMaxScaler
 sc = MinMaxScaler(feature_range=(0,1)) # This will bring all stock prices between this range
 
+
 training_set_scaled = sc.fit_transform(training_set)
+
+
