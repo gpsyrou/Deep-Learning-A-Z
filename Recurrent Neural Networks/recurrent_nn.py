@@ -1,5 +1,3 @@
-
-
 # Task: Predict the trend of Googles stock price for the year 2017
 # As a training set we are using the stock prices from 2012 to 2016
 
@@ -10,8 +8,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 os.chdir("C:\\Users\\hz336yw\\Desktop\\Personal\\Udemy\\Deep_Learning_A_Z\\Deep_Learning_A_Z\\Recurrent_Neural_Networks-1\\Recurrent_Neural_Networks")
-
-
 dataset_train = pd.read_csv('Google_Stock_Price_Train.csv')
 training_set = dataset_train.iloc[:,1:2].values # Picking only the opening price as a numpy array
 
@@ -39,7 +35,6 @@ for i in range(60,len(training_set)):
     y_train.append(training_set_scaled[i,0])
 
 X_train,y_train = np.array(X_train),np.array(y_train)
-
 
 # Reshape
 # Transforming from 2dim to 3dim
