@@ -75,5 +75,7 @@ regressor.add(Dropout(0.2))
 regressor.add(Dense(units = 1))
 
 # Compile the RNN
+# loss = mse as we are having a regression problem
+regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
-
+# Fitting the RNN to the training set
