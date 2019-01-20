@@ -1,3 +1,5 @@
+
+
 # Task: Predict the trend of Googles stock price for the year 2017
 # As a training set we are using the stock prices from 2012 to 2016
 
@@ -8,6 +10,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 os.chdir("C:\\Users\\hz336yw\\Desktop\\Personal\\Udemy\\Deep_Learning_A_Z\\Deep_Learning_A_Z\\Recurrent_Neural_Networks-1\\Recurrent_Neural_Networks")
+
+
 dataset_train = pd.read_csv('Google_Stock_Price_Train.csv')
 training_set = dataset_train.iloc[:,1:2].values # Picking only the opening price as a numpy array
 
@@ -36,6 +40,7 @@ for i in range(60,len(training_set)):
 
 X_train,y_train = np.array(X_train),np.array(y_train)
 
+
 # Reshape
 # Transforming from 2dim to 3dim
 X_train = np.reshape(X_train,(X_train.shape[0],X_train.shape[1],1))
@@ -45,11 +50,18 @@ X_train = np.reshape(X_train,(X_train.shape[0],X_train.shape[1],1))
 # 3rd dim corresponsd to number of indicators
 
 # Part 2 - Building the RNN
+from keras.models import Sequential
+from keras.layers import Dense
+from keras.layers import LSTM
+from keras.layers import Dropout
 
+# Initializing the RNN
+# As we want to predict price, we have a regression problem and not a classification one
+regressor = Sequential()
 
-
-
-
+# Add the first LSTM layer and some Dropout Regularization to avoid overfitting
+regressor.add(LSTM(units = 50,return_sequences = True, input_shape =(X_train.shape[1],1)))
+regressor.add(Dropout(0.2)) # 20% of the neurons is going to be ignored during each iteration of the training
 
 
 
