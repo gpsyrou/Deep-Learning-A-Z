@@ -36,7 +36,6 @@ for i in range(60,len(training_set)):
 
 X_train,y_train = np.array(X_train),np.array(y_train)
 
-
 # Reshape
 # Transforming from 2dim to 3dim
 X_train = np.reshape(X_train,(X_train.shape[0],X_train.shape[1],1))
