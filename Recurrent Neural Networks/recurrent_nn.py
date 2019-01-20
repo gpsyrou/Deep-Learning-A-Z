@@ -1,5 +1,3 @@
-
-
 # Task: Predict the trend of Googles stock price for the year 2017
 # As a training set we are using the stock prices from 2012 to 2016
 
