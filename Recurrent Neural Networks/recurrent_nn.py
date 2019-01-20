@@ -1,3 +1,5 @@
+
+
 # Task: Predict the trend of Googles stock price for the year 2017
 # As a training set we are using the stock prices from 2012 to 2016
 
@@ -14,6 +16,8 @@ dataset_train = pd.read_csv('Google_Stock_Price_Train.csv')
 training_set = dataset_train.iloc[:,1:2].values # Picking only the opening price as a numpy array
 
 # Whenever we are building an RNN then Normalisation is recommended, instead of Standardization
+
+# Part 1 - Data Preprocessing
 
 # Feature Scaling
 from sklearn.preprocessing import MinMaxScaler
@@ -35,4 +39,22 @@ for i in range(60,len(training_set)):
     y_train.append(training_set_scaled[i,0])
 
 X_train,y_train = np.array(X_train),np.array(y_train)
+
+
+# Reshape
+# Transforming from 2dim to 3dim
+X_train = np.reshape(X_train,(X_train.shape[0],X_train.shape[1],1))
+
+# 1st dimension corresponds to the number of stock prices
+# 2nd dimension corresponds to the number of timesteps
+# 3rd dim corresponsd to number of indicators
+
+# Part 2 - Building the RNN
+
+
+
+
+
+
+
 
