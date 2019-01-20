@@ -8,6 +8,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 os.chdir("C:\\Users\\hz336yw\\Desktop\\Personal\\Udemy\\Deep_Learning_A_Z\\Deep_Learning_A_Z\\Recurrent_Neural_Networks-1\\Recurrent_Neural_Networks")
+
+
 dataset_train = pd.read_csv('Google_Stock_Price_Train.csv')
 training_set = dataset_train.iloc[:,1:2].values # Picking only the opening price as a numpy array
 
@@ -35,6 +37,7 @@ for i in range(60,len(training_set)):
     y_train.append(training_set_scaled[i,0])
 
 X_train,y_train = np.array(X_train),np.array(y_train)
+
 
 # Reshape
 # Transforming from 2dim to 3dim
@@ -78,3 +81,17 @@ regressor.add(Dense(units = 1))
 regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
 # Fitting the RNN to the training set
+regressor.fit(X_train, y_train, epochs = 100, batch_size = 32)
+
+
+# Part 3 - Making the predictions
+
+# Getting the  real stock price of 2017
+dataset_test = pd.read_csv('Google_Stock_Price_Test.csv')
+real_stock_price = dataset_test.iloc[:,1:2].values
+
+# Getting the predicted stock price of 2017
+dataset_total = pd.concat((dataset_train['Open'],dataset_test['Open']),axis = 0)
+inputs = dataset_total[len(dataset_total) - len(dataset_test) - 60:].values
+inputs = inputs.reshape(-1,1)
+
