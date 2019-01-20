@@ -63,5 +63,21 @@ regressor = Sequential()
 regressor.add(LSTM(units = 50,return_sequences = True, input_shape =(X_train.shape[1],1)))
 regressor.add(Dropout(0.2)) # 20% of the neurons is going to be ignored during each iteration of the training
 
+# Add a second LSTM layer and Dropout
+regressor.add(LSTM(units = 50, return_sequences = True))
+regressor.add(Dropout(0.2))
+
+# Third LSTM layer
+regressor.add(LSTM(units = 50, return_sequences = True))
+regressor.add(Dropout(0.2))
+
+# Fourth LSTM layer
+regressor.add(LSTM(units = 50, return_sequences = False))
+regressor.add(Dropout(0.2))
+
+# Add the output Layer
+regressor.add(Dense(units = 1))
+
+# Compile the RNN
 
 
