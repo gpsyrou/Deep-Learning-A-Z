@@ -73,6 +73,6 @@ A recurrent neural network is a class of artificial neural network where connect
 
 **Example:**
 
-Predicting the trend of Google's stock price using LSTM.
+Predicting the trend of Google's stock price using LSTM.The code can be found <a href="https://github.com/gpsyrou/Deep-Learning-A-Z/blob/master/Recurrent%20Neural%20Networks/recurrent_nn.py"> here </a>.
 
 
