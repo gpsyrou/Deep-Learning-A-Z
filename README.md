@@ -78,3 +78,6 @@ The code for this excercise can be found <a href="https://github.com/gpsyrou/Dee
 
 <br></br>
 **SECTION 4 - Self Organizing Maps (SOM)**
+
+<img src="https://www.researchgate.net/profile/Damian_Jankowski3/publication/291834232/figure/fig3/AS:553741877481472@1509033759154/Self-organizing-map-structure.png" alt="22" style="width:104px;height:142px;">
+ 
