@@ -24,7 +24,6 @@ sc = MinMaxScaler(feature_range = (0,1)) # scalling so that the values all fall 
 
 X = sc.fit_transform(X)
 
-
 # Training the Self Organizing Map
 import os
 os.chdir(r'C:\Users\george\Desktop\Online Courses\Udemy\Self_Organizing_Maps')
