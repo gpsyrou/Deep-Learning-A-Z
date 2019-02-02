@@ -58,3 +58,5 @@ show()
 # If the MID is high (close to one) then it is likely that we have a fraud
 # The white boxes are almost equal to 1 
 
+# Finding the fraud
+mappings = som.win_map(X) # get all the mappings for all the winning nodes
