@@ -36,8 +36,25 @@ som = MiniSom(x = 10,y = 10, input_len = 15, sigma = 1.0, learning_rate = 0.5)
 som.random_weights_init(X) # initialize the random weights
 som.train_random(data = X,num_iteration = 100)
 
-# Visualizing the results
+# Visualizing the results / i.e. visualizing the MIDs (mean interneuron distances) 
+from pylab import bone,pcolor,colorbar,plot,show
 
-
-
+bone()
+pcolor(som.distance_map().T)
+colorbar()
+markers = ['o','s'] # o: didnt got approval  s: got approval
+colors = ['r','g']
+for i,x in enumerate(X):
+    wining_node = som.winner(x) # returns the winning node for each customer x
+    plot(wining_node[0] + 0.5,
+         wining_node[1] + 0.5, 
+         markers[y[i]], 
+         colors[y[i]], 
+         markeredgecolor = colors[y[i]], 
+         markerfacecolor = 'None', 
+         markersize = 10, 
+         markeredgewidth = 2)
+show()
+# If the MID is high (close to one) then it is likely that we have a fraud
+# The white boxes are almost equal to 1 
 
