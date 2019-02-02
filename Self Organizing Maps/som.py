@@ -60,3 +60,6 @@ show()
 
 # Finding the fraud
 mappings = som.win_map(X) # get all the mappings for all the winning nodes
+frauds = np.concatenate((mappings[(8,1)],mappings[(6,8)]),axis = 0) # (8,1) and (6,8) correspond to the white nodes
+frauds = sc.inverse_transform(frauds)# potential customers that cheated
+frauds
