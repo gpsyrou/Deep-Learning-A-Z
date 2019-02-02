@@ -23,3 +23,21 @@ from sklearn.preprocessing import MinMaxScaler
 sc = MinMaxScaler(feature_range = (0,1)) # scalling so that the values all fall between 0 and 1
 
 X = sc.fit_transform(X)
+
+
+# Training the Self Organizing Map
+import os
+os.chdir(r'C:\Users\george\Desktop\Online Courses\Udemy\Self_Organizing_Maps')
+from minisom import MiniSom
+
+# sigma = radius
+# creating a 10x10 grid, 15 input values
+som = MiniSom(x = 10,y = 10, input_len = 15, sigma = 1.0, learning_rate = 0.5)
+som.random_weights_init(X) # initialize the random weights
+som.train_random(data = X,num_iteration = 100)
+
+# Visualizing the results
+
+
+
+
