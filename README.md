@@ -89,3 +89,4 @@ A self-organizing map (SOM) or self-organizing feature map (SOFM) is a type of a
  
 A Boltzmann machine (also called stochastic Hopfield network with hidden units) is a type of stochastic recurrent neural network.
 
+Boltzmann machines can be seen as the stochastic, generative counterpart of Hopfield networks. They were one of the first neural networks capable of learning internal representations,[clarification needed] and are able to represent and (given sufficient time) solve difficult combinatoric problems. (source: <a href="https://en.wikipedia.org/wiki/Boltzmann_machine"> wikipedia </a>)
