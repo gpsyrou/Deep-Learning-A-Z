@@ -96,7 +96,7 @@ Boltzmann machines can be seen as the stochastic, generative counterpart of Hopf
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Autoencoder_structure.png" alt="22" style="width:104px;height:142px;">
  
 
-An autoencoder is a type of artificial neural network used to learn efficient data codings in an unsupervised manner.[1][2] The aim of an autoencoder is to learn a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore signal “noise.” Along with the reduction side, a reconstructing side is learnt, where the autoencoder tries to generate from the reduced encoding a representation as close as possible to its original input, hence its name. Recently, the autoencoder concept has become more widely used for learning generative models of data.[3][4] Some of the most powerful AI in the 2010s have involved sparse autoencoders stacked inside of deep neural networks
+An autoencoder is a type of artificial neural network used to learn efficient data codings in an unsupervised manner.[1][2] The aim of an autoencoder is to learn a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore signal “noise.” Along with the reduction side, a reconstructing side is learnt, where the autoencoder tries to generate from the reduced encoding a representation as close as possible to its original input, hence its name. Recently, the autoencoder concept has become more widely used for learning generative models of data.[3][4] Some of the most powerful AI in the 2010s have involved sparse autoencoders stacked inside of deep neural networks (source: <a href="https://en.wikipedia.org/wiki/Autoencoder"> wikipedia </a>)
 
 
 
