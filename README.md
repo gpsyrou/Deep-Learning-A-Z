@@ -6,7 +6,7 @@
 
 **SECTION 1 - Artificial Neural Networks (ANN)**:
 
-Artificial neural networks (ANN) or connectionist systems are computing systems vaguely inspired by the biological neural networks that constitute animal brains.[1] The neural network itself is not an algorithm, but rather a framework for many different machine learning algorithms to work together and process complex data inputs.Such systems "learn" to perform tasks by considering examples, generally without being programmed with any task-specific rules.An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal from one artificial neuron to another. An artificial neuron that receives a signal can process it and then signal additional artificial neurons connected to it. (source: <a href="https://en.wikipedia.org/wiki/Artificial_neural_network"> wikipedia </a>) 
+Artificial neural networks (ANN) or connectionist systems are computing systems vaguely inspired by the biological neural networks that constitute animal brains.[1] The neural network itself is not an algorithm, but rather a framework for many different machine learning algorithms to work together and process complex data inputs.Such systems "learn" to perform tasks by considering examples, generally without being programmed with any task-specific rules.An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal from one artificial neuron to another. An artificial neuron that receives a signal can process it and then signal additional artificial neurons connected to it. (source: <a href="https://en.wikipedia.org/wiki/Artificial_neural_network"> wikipedia</a>) 
 
 **Example:**
 
@@ -81,7 +81,7 @@ The code for this excercise can be found <a href="https://github.com/gpsyrou/Dee
 <img src="https://www.researchgate.net/profile/Damian_Jankowski3/publication/291834232/figure/fig3/AS:553741877481472@1509033759154/Self-organizing-map-structure.png" alt="22" style="width:104px;height:142px;">
  
 
-A self-organizing map (SOM) or self-organizing feature map (SOFM) is a type of artificial neural network (ANN) that is trained using unsupervised learning to produce a low-dimensional (typically two-dimensional), discretized representation of the input space of the training samples, called a map, and is therefore a method to do dimensionality reduction. Self-organizing maps differ from other artificial neural networks as they apply competitive learning as opposed to error-correction learning (such as backpropagation with gradient descent), and in the sense that they use a neighborhood function to preserve the topological properties of the input space. (source: <a href="https://en.wikipedia.org/wiki/Self-organizing_map"> wikipedia </a>)
+A self-organizing map (SOM) or self-organizing feature map (SOFM) is a type of artificial neural network (ANN) that is trained using unsupervised learning to produce a low-dimensional (typically two-dimensional), discretized representation of the input space of the training samples, called a map, and is therefore a method to do dimensionality reduction. Self-organizing maps differ from other artificial neural networks as they apply competitive learning as opposed to error-correction learning (such as backpropagation with gradient descent), and in the sense that they use a neighborhood function to preserve the topological properties of the input space. (source: <a href="https://en.wikipedia.org/wiki/Self-organizing_map"> wikipedia</a>)
 
 **SECTION 5 - Boltzmann Machines (BM)**
 
@@ -89,14 +89,14 @@ A self-organizing map (SOM) or self-organizing feature map (SOFM) is a type of a
  
 A Boltzmann machine (also called stochastic Hopfield network with hidden units) is a type of stochastic recurrent neural network.
 
-Boltzmann machines can be seen as the stochastic, generative counterpart of Hopfield networks. They were one of the first neural networks capable of learning internal representations,[clarification needed] and are able to represent and (given sufficient time) solve difficult combinatoric problems. (source: <a href="https://en.wikipedia.org/wiki/Boltzmann_machine"> wikipedia </a>)
+Boltzmann machines can be seen as the stochastic, generative counterpart of Hopfield networks. They were one of the first neural networks capable of learning internal representations,[clarification needed] and are able to represent and (given sufficient time) solve difficult combinatoric problems. (source: <a href="https://en.wikipedia.org/wiki/Boltzmann_machine"> wikipedia</a>)
 
 **SECTION 6 - Autoencoders**
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Autoencoder_structure.png" alt="22" style="width:104px;height:142px;">
  
 
-An autoencoder is a type of artificial neural network used to learn efficient data codings in an unsupervised manner.[1][2] The aim of an autoencoder is to learn a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore signal “noise.” Along with the reduction side, a reconstructing side is learnt, where the autoencoder tries to generate from the reduced encoding a representation as close as possible to its original input, hence its name. Recently, the autoencoder concept has become more widely used for learning generative models of data.[3][4] Some of the most powerful AI in the 2010s have involved sparse autoencoders stacked inside of deep neural networks (source: <a href="https://en.wikipedia.org/wiki/Autoencoder"> wikipedia </a>)
+An autoencoder is a type of artificial neural network used to learn efficient data codings in an unsupervised manner.[1][2] The aim of an autoencoder is to learn a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore signal “noise.” Along with the reduction side, a reconstructing side is learnt, where the autoencoder tries to generate from the reduced encoding a representation as close as possible to its original input, hence its name. Recently, the autoencoder concept has become more widely used for learning generative models of data.[3][4] Some of the most powerful AI in the 2010s have involved sparse autoencoders stacked inside of deep neural networks(source: <a href="https://en.wikipedia.org/wiki/Autoencoder"> wikipedia</a>).
 
 
 
