@@ -46,7 +46,6 @@ mappings = som.win_map(X)
 frauds = np.concatenate((mappings[(5,3)], mappings[(8,3)]), axis = 0)
 frauds = sc.inverse_transform(frauds)
 
-
 # Part 2 - Going from Unsupervised to Supervised Deep Learning
 
 # Creating the matrix of features
