@@ -91,6 +91,12 @@ A Boltzmann machine (also called stochastic Hopfield network with hidden units) 
 
 Boltzmann machines can be seen as the stochastic, generative counterpart of Hopfield networks. They were one of the first neural networks capable of learning internal representations,[clarification needed] and are able to represent and (given sufficient time) solve difficult combinatoric problems. (source: <a href="https://en.wikipedia.org/wiki/Boltzmann_machine"> wikipedia</a>)
 
+
+**Example:**
+
+Constructing a Restricted Boltzmann Machine on Movie Ratings.
+The code for this excercise can be found <a href=""> here </a>.
+
 **SECTION 6 - Autoencoders**
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Autoencoder_structure.png" alt="22" style="width:104px;height:142px;">
