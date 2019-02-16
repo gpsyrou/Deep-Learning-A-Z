@@ -95,7 +95,7 @@ Boltzmann machines can be seen as the stochastic, generative counterpart of Hopf
 **Example:**
 
 Constructing a Restricted Boltzmann Machine on Movie Ratings.
-The code for this excercise can be found <a href=""> here </a>.
+The code for this excercise can be found <a href="https://github.com/gpsyrou/Deep-Learning-A-Z/blob/master/Boltzmann%20Machines/rbm.py"> here </a>.
 
 **SECTION 6 - Autoencoders**
 
