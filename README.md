@@ -10,6 +10,7 @@ Artificial neural networks (ANN) or connectionist systems are computing systems 
 
 **Example:**
 
+
 1) **Bank Customers**
 
     **Task 1 - Create the Artificial Neural Network**
